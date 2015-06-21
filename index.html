@@ -12,6 +12,7 @@
     </head>
 
     <body ng-controller="MainController">
+		If the model nested through multiple ng-repeat loops, each loop level objects can be accessed using $parent.$index property.
         <div ng-repeat="question in questionList track by $index">
             <div>
                 <h4>{{question.question_text}}</h4>
